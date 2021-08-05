@@ -8,17 +8,6 @@
     <form action="{{route('peliculas.store')}}" method="POST">
         @csrf
         <label>
-            slug:
-            <br>
-            <input type="hidden" name="slug" value="{{old('slug')}}">
-            <br>
-            @error('slug')
-                <small>*{{$message}}</small>
-            @enderror
-            <br>
-        </label>
-        
-        <label>
             Nombre:
             <br>
             <input type="text" name="nombre" value="{{old('nombre')}}">
